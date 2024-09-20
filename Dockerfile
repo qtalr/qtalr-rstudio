@@ -8,6 +8,7 @@ ENV S6_VERSION="v2.1.0.2"
 ENV RSTUDIO_VERSION="2024.04.2+764"
 ENV DEFAULT_USER="ruser"
 
+# Use root user to install software
 USER root
 
 # Install Pandoc, Quarto, and RStudio
