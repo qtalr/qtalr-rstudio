@@ -1,7 +1,6 @@
 # Dockerfile
 # RStudio
 
-# Use rocker/r-ver image
 FROM francojc/qtalr-r:latest
 
 # Set env variables
