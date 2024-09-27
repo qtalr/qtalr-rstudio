@@ -19,4 +19,3 @@ RUN /rocker_scripts/install_quarto.sh
 
 EXPOSE 8787
 CMD ["/init"]
-
