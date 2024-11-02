@@ -18,6 +18,15 @@ You can run:
 docker run -d -p 8787:8787 -e PASSWORD=yourpassword francojc/qtalr-rstudio:latest
 ```
 
+If you want to attach a host directory to the container, you can use the following command:
+
+```bash
+docker run -d -p 8787:8787 -e PASSWORD=yourpassword -v /path/to/host/directory:/home/ruser/hostdir francojc/qtalr-rstudio:latest
+```
+
 Then you can access RStudio Server at `http://localhost:8787` and log in with the username `ruser` and the password you set.
 
 You can also use the Desktop version of Docker to run the image and connect it to a host directory.
+
+> [!NOTE]
+> I highly recommend installing packages with {pak} instead of the default `install.packages()` function. This will ensure that when packages are installed, any system dependencies are also installed.
