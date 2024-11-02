@@ -11,11 +11,8 @@ ENV DEFAULT_USER="ruser"
 # Use root user to install software
 USER root
 
-# Install Pandoc, Quarto, and RStudio
-# from /rocker_scripts/
+# Install RStudio from /rocker_scripts/
 RUN /rocker_scripts/install_rstudio.sh
-RUN /rocker_scripts/install_pandoc.sh
-RUN /rocker_scripts/install_quarto.sh
 
 EXPOSE 8787
 CMD ["/init"]
