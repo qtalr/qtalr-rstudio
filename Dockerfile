@@ -1,6 +1,7 @@
 # Dockerfile
 # RStudio
 
+# Use the francojc/qtalr-r image as base
 FROM francojc/qtalr-r:latest
 
 # Set env variables
